@@ -20,7 +20,7 @@ export default function Logon() {
         try {
             const response = await api.post('session', {id});
 
-            console.log(response);
+            //em teoria, isso não é uma falha de segurança?
             localStorage.setItem('ongId', id);
             localStorage.setItem('ongName', response.data.name);
             history.push('/profile');

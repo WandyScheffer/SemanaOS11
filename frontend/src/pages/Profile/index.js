@@ -14,7 +14,7 @@ export default function Profile() {
     const ongId = localStorage.getItem('ongId');
 
     const history = useHistory();
-
+    //passar para async awai
     useEffect(() => {
         api.get('profile', {
             headers: {
